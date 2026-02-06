@@ -7,10 +7,16 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+	</parent> 
+	
+	<!-- By the Jar for the Jar of the Jar  -->
+	
 	<groupId>com.test.training</groupId>
 	<artifactId>bootdockerpipeline</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<!-- default is jar -->
+	
 	<name>bootdockerpipeline</name>
 	<description>Boot, Github, Docker and Jenkins integration pipeline</description>
 	<url/>
@@ -46,6 +52,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.5.6</version>
+    <scope>compile</scope>
+    
+    
+</dependency>
+		
+		
 	</dependencies>
 
 	<build>
